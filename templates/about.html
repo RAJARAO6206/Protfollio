@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Raja Babu</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0f172a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #0ef;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    .navbar {
+      background: #0f172a;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 2px solid #0ef;
+      border-bottom: 2px solid #0ef;
+    }
+
+    .navbar ul {
+      list-style: none;
+    }
+
+    .navbar ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #0ef;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1e293b;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #0ef;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0ef;
+      padding-bottom: 10px;
+    }
+
+    section p, section li {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #d1d5db;
+    }
+
+    .highlight {
+      color: #0ef;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #0ef;
+    }
+
+    /* Extra Boxes */
+    .info-box {
+      background-color: #0f172a;
+      border-left: 5px solid #0ef;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+    }
+
+    .info-box h3 {
+      color: #7dd3fc;
+      margin-bottom: 10px;
+    }
+
+    .info-box ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .contact-row {
+      margin-bottom: 10px;
+    }
+
+    .contact-label {
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    .contact-value {
+      color: #d1d5db;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Raja Babu</h1>
+    <p>Machine Learning & Web Development Enthusiast | BCA Student</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+  <li><a href="{{ url_for('index') }}">Home</a></li>
+
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#personal">Personal Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm <span class="highlight">Raja Babu</span>, a final-year BCA Computer Science student at <strong>Teerthanker Mahaveer University</strong>, Moradabad. I’m passionate about <span class="highlight">Machine Learning</span> and <span class="highlight">Web Development</span>. I’ve worked on several projects related to real-world prediction systems, security, and smart applications.</p>
+
+    <p>I love solving problems, building systems from scratch, and continuously exploring new technologies. I enjoy working with Python, Oracle Database, Flask framework, and clean responsive UI designs.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-row"><span class="contact-label">Email:</span><span class="contact-value">rb9084563@gmail.com</span></div>
+    <div class="contact-row"><span class="contact-label">Phone:</span><span class="contact-value">+91 6206831643</span></div>
+    <div class="contact-row"><span class="contact-label">LinkedIn:</span><span class="contact-value"><a href="https://www.linkedin.com/in/raja-babu-572403293" target="_blank">linkedin.com/in/raja-babu</a></span></div>
+    <div class="contact-row"><span class="contact-label">GitHub:</span><span class="contact-value"><a href="https://github.com/RAJARAO6206" target="_blank">github.com/RAJARAO6206</a></span></div>
+  </section>
+
+<!-- Education -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="info-box">
+    <h3>Bachelor of Computer Application</h3>
+    <p><strong>University:</strong> Teerthanker Mahaveer University, Moradabad</p>
+    <p><strong>CGPA:</strong> 8.50</p>
+    <p><strong>Duration:</strong> 07/2022 - Present</p>
+    <p><strong>Location:</strong> Moradabad, Uttar Pradesh</p>
+  </div>
+
+  <div class="info-box">
+  <h3>Intermediate</h3>
+  <p><strong>School:</strong> Baldev S. Secondary School Dinara</p>
+  <p><strong>Marks:</strong> 80.8%</p>
+  <p><strong>Duration:</strong> 06/2020 - 05/2022</p>
+  <p><strong>Location:</strong> Rohtas, Bihar</p>
+</div>
+
+
+  <div class="info-box">
+    <h3>Matric</h3>
+    <p><strong>School:</strong> Baldev High School Dinara</p>
+    <p><strong>Marks:</strong> 74.8%</p>
+    <p><strong>Duration:</strong> 01/2018 - 05/2020</p>
+    <p><strong>Location:</strong> Rohtas, Bihar</p>
+  </div>
+</section>
+
+
+  <!-- Interests -->
+  <section id="interests">
+    <h2>Hobbies & Interests</h2>
+
+    <div class="info-box">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Listening to Music 🎧</li>
+        <li>Playing Cricket 🏏</li>
+        <li>Meditation & Yoga 🧘</li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h3>Interests</h3>
+      <ul>
+        <li>Exploring New Technologies 💻</li>
+        <li>Solving Mathematical Puzzles ➕➖</li>
+        <li>Learning about AI and ML 🔍</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Personal Details -->
+  <section id="personal">
+    <h2>Personal Information</h2>
+    <p><strong>Date of Birth:</strong> 12 Jan 2004</p>
+    <p><strong>Gender:</strong> Male</p>
+    <p><strong>Father's Name:</strong> Shivprasan Singh</p>
+    <p><strong>Mother's Name:</strong> Lalita Devi</p>
+    <p><strong>Correspondence Address:</strong> TMU Campus, Moradabad, Uttar Pradesh</p>
+    <p><strong>Permanent Address:</strong> Village - Panditpura, Ward No - 06, Post - Akodha, Police Station - Dinara, District - Rohtash, Bihar, Pincode - 802213</p>
+
+    <div class="info-box">
+      <h3>Languages Known</h3>
+      <ul>
+        <li>Hindi (Fluent)</li>
+        <li>English (Professional Working Proficiency)</li>
+      </ul>
+    </div>
+  </section>
+
+
+  
+  <footer>
+    <p>&copy; 2025 Raja Babu. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>

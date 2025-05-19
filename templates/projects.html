@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Raja Babu</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #0f172a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #1e293b;
+      padding: 30px 10px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #0ef;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+    .navbar {
+      background: #0f172a;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 2px solid #0ef;
+      border-bottom: 2px solid #0ef;
+    }
+    .navbar ul {
+      list-style: none;
+    }
+    .navbar ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: #0ef;
+    }
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1e293b;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #0ef;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0ef;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    .project-card {
+      background: #0f172a;
+      border-left: 5px solid #0ef;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .project-card h3 {
+      color: #7dd3fc;
+      margin-bottom: 10px;
+    }
+    .project-card p {
+      color: #d1d5db;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Raja Babu</h1>
+  <p>All Major Projects & Internship Work</p>
+</header>
+
+<nav class="navbar">
+  <ul>
+  <li><a href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+     <li><a href="{{ url_for('skills') }}">Skills</a></li>
+      <li><a href="{{ url_for('achievements') }}">Experience & Achevements</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h2>My Projects</h2>
+
+  <div class="project-card">
+    <h3>Crime Safety Prediction System</h3>
+    <p>Designed an AI-based solution to identify unsafe areas and suggest safe routes. Added SMS alert feature for emergency help. Used Python, Machine Learning algorithms, Flask, Twilio API, and Google Maps API. Achieved 97% accuracy.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Diabetes Disease Prediction System</h3>
+    <p>Used medical datasets and ML algorithms like Logistic Regression, DecisionTree, Random Forest, and GaussianNB to predict if a person has diabetes. Built using Python, Flask, HTML, CSS. Accuracy achieved: 90%.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Car Purchase Prediction System</h3>
+    <p>Predicted eligibility of users for car purchase using social media advertisement dataset. Tools used: Python, ML models, Flask. Achieved 90% accuracy.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>IRIS Flower Species Prediction</h3>
+    <p>Used Logistic Regression on IRIS dataset to classify flowers based on petal and sepal dimensions. Built with Python, Flask, HTML/CSS. Accuracy achieved: 97%.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Oracle Flask Registration Website</h3>
+    <p>Created a secure user registration system using Flask backend, Oracle DB, and SQLAlchemy. Features include password hashing, form validation, and persistent user storage. UI designed with HTML/CSS.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Smart Leave Approval System</h3>
+    <p>Java + Spring Boot web app to automate leave process from student to mentor to HOD and warden. Integrated parent verification via email. Technologies used: Java, Spring Boot, Thymeleaf, MySQL, Mail API.</p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Internship Experience</h2>
+
+  <div class="project-card">
+    <h3>Machine Learning Internship – PLASMID (Online)</h3>
+    <p>Duration: June 2024 – August 2024<br/>
+    Completed hands-on training in ML concepts and participated in 2 projects:<br/>
+    • Minor: Predictive ML model development<br/>
+    • Major: Real-time payment fraud detection using classification algorithms<br/>
+    Tools: Python, Scikit-learn, Pandas, Matplotlib<br/>
+    Received: Internship Certificate, Industrial Training Certificate, Letter of Recommendation</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Raja Babu. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Raja Babu</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0f172a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #0ef;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    .navbar {
+      background: #0f172a;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 2px solid #0ef;
+      border-bottom: 2px solid #0ef;
+    }
+
+    .navbar ul {
+      list-style: none;
+    }
+
+    .navbar ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #0ef;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1e293b;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #0ef;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0ef;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .skill-card {
+      background-color: #0f172a;
+      border: 2px solid #0ef;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.4s ease, background 0.3s;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      background-color: #1e40af;
+    }
+
+    .skill-card h3 {
+      color: #0ef;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Raja Babu</h1>
+    <p>My Technical Skills & Expertise</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+  <li><a href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <p>Python, C++, Java</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Frontend Development</h3>
+        <p>HTML5, CSS3, Bootstrap</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Backend & Frameworks</h3>
+        <p>Flask, PHP (basic)</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Machine Learning</h3>
+        <p>Scikit-learn, NumPy, Pandas, Matplotlib</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <p>MySQL, Oracle 10g, SQLite</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools & IDEs</h3>
+        <p>VS Code, Jupyter Notebook, Git, GitHub</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Soft Skills</h3>
+        <p>Problem Solving, Communication, Critical Thinking</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Algorithms</h3>
+        <p>Machine Learning Algorithms, Data Structure Algorithms</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Raja Babu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Achievements - Raja Babu</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #0f172a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #1e293b;
+      padding: 30px 10px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #0ef;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+    .navbar {
+      background: #0f172a;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 2px solid #0ef;
+      border-bottom: 2px solid #0ef;
+    }
+    .navbar ul {
+      list-style: none;
+    }
+    .navbar ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: #0ef;
+    }
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1e293b;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #0ef;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0ef;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    .achievement-card {
+      background: #0f172a;
+      border-left: 5px solid #0ef;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .achievement-card h3 {
+      color: #7dd3fc;
+      margin-bottom: 10px;
+    }
+    .achievement-card p {
+      color: #d1d5db;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Raja Babu</h1>
+  <p>My Achievements & Certifications</p>
+</header>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+     <li><a href="{{ url_for('skills') }}">Skills</a></li>
+      <li><a href="{{ url_for('achievements') }}">Experience & Achevements</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h2>Certifications</h2>
+
+  <div class="achievement-card">
+    <h3>Introduction to Computers Training</h3>
+    <p>Completed on: November 27, 2023<br/>
+    Conducted by: IIT Bombay (Spoken Tutorial Project)<br/>
+    Score: 65% | Credits: 1<br/>
+    Organized by TMU, invigilated by Dr. Alok Kumar Gahlot.</p>
+  </div>
+
+  <div class="achievement-card">
+    <h3>C Language Training</h3>
+    <p>Completed on: April 22, 2024<br/>
+    Conducted by: IIT Bombay (Spoken Tutorial Project)<br/>
+    Score: 72.5% | Credits: 2<br/>
+    Organized by TMU, invigilated by Dr. Alok Kumar Gahlot.</p>
+  </div>
+
+  <div class="achievement-card">
+    <h3>C++ Training</h3>
+    <p>Completed on: January 20, 2025<br/>
+    Conducted by: IIT Bombay (Spoken Tutorial Project)<br/>
+    Score: 82.5% | Credits: 2<br/>
+    Organized by TMU, invigilated by Harjinder Singh.</p>
+  </div>
+
+    <div class="achievement-card">
+    <h3>Python Programming</h3>
+    <p>Completed on: june  2024<br/>
+    Conducted by: Great Learning Acedemic <br/>
+    Candidate: Raja Babu<br/>
+  </div>
+
+  <div class="achievement-card">
+    <h3>Python For Data Science</h3>
+    <p>Completed on: August 9, 2024<br/>
+    Conducted by: Lernx<br/>
+    UID: yuiwrhhl49j</p>
+  </div>
+
+ 
+
+  <div class="achievement-card">
+    <h3>Certificate of Merit</h3>
+    <p>Completed on:October 11 2024<br/>
+    Conducted by: Naukari Campus Young Turk  & Industrial Experties<br/>
+    Certificate ID: 67080330e3b9a668e0003d57<br/>
+    Score: 95.46% <br/>
+    Candidate: Raja Babu<br/>
+  </div>
+</section>
+
+
+<footer>
+  <p>&copy; 2025 Raja Babu. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

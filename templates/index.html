@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="top-header">
+    <div class="logo">
+      <img src="{{ url_for('static', filename='protfolio image.jpg') }}" alt="Profile Photo" class="logo-img" />
+    </div>
+    <div class="tagline">Machine Learning & Java Developer</div>
+  </header>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+       <li><a href="{{ url_for('projects') }}">Project</a></li>
+       <li><a href="{{ url_for('skills') }}">Skills</a></li>
+       <li><a href="{{ url_for('achievements') }}">Experience & Achevements</a></li>
+       <li><a href="#contact">Contact</a></li>
+      
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1>Hello, It's Me</h1>
+      <h2>Raja Babu</h2>
+      <p>And I'm a <span class="highlight">Machine learning & Java Developer</span></p>
+<p>I am a passionate <strong>Machine Learning</strong> and <strong>Java Developer</strong> with experience in building intelligent systems, solving real-world problems, and developing high-performance applications. I strive to create solutions that are both innovative and impactful. My expertise includes data analysis, predictive modeling, and implementing efficient algorithms using various programming languages.</p>
+     <!-- Social Media Links -->
+<div class="socials">
+  <a href="https://www.facebook.com/share/1EqmkUZQju/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://github.com/RAJARAO6206" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/yadav_raja_babu_07" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/raja-babu-572403293" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+
+<a href="RajaBabuResume (1).pdf" class="btn" download>Download CV</a>
+    </div>
+    <div class="home-image">
+<img src="{{ url_for('static', filename='RAJA_NEW_IMAGES.jpg') }}" alt="Profile Photo" />
+    </div>
+  </section>
+
+ 
+<!--2nd page -->
+
+<!-- Our Features Section -->
+<section class="features-section" id="features">
+  <h2 class="section-title">Our <span>Features</span></h2>
+  <div class="features-container">
+    
+    <div class="feature-card">
+      <i class="fas fa-brain"></i>
+      <h3>AI-Powered Predictions</h3>
+      <p>Integrated machine learning models to provide accurate and real-time predictions in projects.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="feature-card">
+      <i class="fas fa-database"></i>
+      <h3>Robust Database Support</h3>
+      <p>Secure and scalable backend using Oracle Database for managing user and prediction data efficiently.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="feature-card">
+      <i class="fas fa-lock"></i>
+      <h3>Secure User Authentication</h3>
+      <p>Reliable registration and login systems using Flask for user data protection and access control.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="feature-card">
+      <i class="fas fa-chart-line"></i>
+      <h3>Real-World Applications</h3>
+      <p>Projects address practical problems like health prediction, fraud detection, and personal safety.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="feature-card">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Clean & Scalable Code</h3>
+      <p>Well-structured, documented, and maintainable code for easier collaboration and upgrades.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="feature-card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Fully Responsive Design</h3>
+      <p>Cross-device compatibility ensuring smooth user experience on mobile, tablet, and desktop.</p>
+      <a href="#">Read More</a>
+    </div>
+
+  <div class="feature-card">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Java Expertise</h3>
+      <p>Proficient in Java development, including object-oriented programming,
+        multi-threading, and real-world application design for robust, efficient solutions.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    </div>
+
+</section>
+
+
+<!--3rd page-->
+<!-- Latest Project Section -->
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Our <span>Projects</span></h2>
+  <div class="projects-grid">
+    <div class="project-item">
+      <img src="{{ url_for('static', filename='iris.png') }}" alt="Project 1">
+    </div>
+    <div class="project-item">
+      <img src="{{ url_for('static', filename='social.png') }}" alt="Project 2">
+    </div>
+    <div class="project-item">
+      <img src="{{ url_for('static', filename='diabetes.png') }}" alt="Project 3">
+    </div>
+    <div class="project-item">
+      <img src="{{ url_for('static', filename='registration.png') }}" alt="Project 4">
+    </div>
+    <div class="project-item">
+      <img src="{{ url_for('static', filename='women.png') }}" alt="Project 5">
+    </div>
+    <div class="project-item">
+      <img src="{{ url_for('static', filename='payment.png') }}" alt="Project 6">
+    </div>
+  </div>
+</section>
+
+
+<!--4th page-->
+
+<!-- Contact Me Section -->
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact <span>Me!</span></h2>
+  
+  <form class="contact-form" id="contact-form" action="{{ url_for('contact') }}" method="POST">
+  <div class="form-group">
+    <input type="text" name="full_name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+  </div>
+
+  <div class="form-group">
+    <input type="text" name="mobile" placeholder="Mobile Number" required>
+    <input type="text" name="subject" placeholder="Email Subject">
+  </div>
+
+  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+  <button type="submit" class="send-btn">Send Message</button>
+
+  <!-- 👇 Yeh message yahan dikhaya jayega -->
+<p id="form-message" style="margin-top: 10px; color: white;"></p>
+</form>
+
+</section>
+
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+</html>
